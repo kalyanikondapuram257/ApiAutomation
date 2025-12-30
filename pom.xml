@@ -110,9 +110,9 @@ in pom.xml like this
   <listener>io.qameta.allure.testng.AllureTestNg</listener>
 </properties>
                     <!-- Remove suiteXmlFiles for dynamic class selection -->
-                    <!-- <suiteXmlFiles>
+                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles> -->
+                    </suiteXmlFiles> 
                 </configuration>
             </plugin>
 
