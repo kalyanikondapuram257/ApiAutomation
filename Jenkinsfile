@@ -1,8 +1,6 @@
 pipeline {
     agent any
-     triggers {
-        cron('H/2 * * * *')   
-    } 
+     
 parameters {
         choice(
             name: 'ENV',
