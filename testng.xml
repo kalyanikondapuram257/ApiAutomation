@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PetStoreSuite">
+<listeners>
+<listener class-name="io.qameta.allure.testng.AllureTestNg"/> <!-- Required for Allure results -->
+    <listener class-name="utils.AllureTestListener"/>
+</listeners>
+
+    <test name="PetServiceTests">
+        <classes>
+            <class name="spec.petServiceSpec"/>
+        </classes>
+    </test>
+</suite>
+
+
