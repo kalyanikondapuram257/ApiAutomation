@@ -16,4 +16,6 @@ public class addingPetResponsePojo {
 	    private List<String> photoUrls;
 	    private List<TagResponsePojo> tags;
 	    private String status;
+	  
+
 }

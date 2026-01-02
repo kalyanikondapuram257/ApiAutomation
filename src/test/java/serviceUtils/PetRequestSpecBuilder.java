@@ -34,7 +34,7 @@ public class PetRequestSpecBuilder{
         // Send API request using RestAssured
         Response newlyAddedPetResponse = RestAssured.given()
                 .spec(CommonRequestSpec.getRequestSpec())
-                .header("Content-Type", "application/json")
+                .headers(Helper.addheader())
                 .body(newPet)
                 .basePath(ApiEndpoints.PET_BASE.getPath())
                 .when()
@@ -43,6 +43,36 @@ public class PetRequestSpecBuilder{
 return newlyAddedPetResponse;
        
     }
+	
+	public static Response addingPetExcel() throws Exception{
+		 // Load JSON dynamically into Pet object
+		//addingPetRequestPojo newPet = Helper.getObjectFromJson("src/test/resources/Payloads/addingPet.json", addingPetRequestPojo.class);
+
+       // Send API request using RestAssured
+       Response newlyAddedPetExcelResponse = RestAssured.given()
+               .spec(CommonRequestSpec.getRequestSpec())
+               .headers(Helper.addheader())
+               .body(Helper.getRequestPayload("addingPetToStore.xlsx", "AddingPet", "RequestBody"))
+               .basePath(ApiEndpoints.PET_BASE.getPath())
+               .when()
+               .post();
+           
+    return newlyAddedPetExcelResponse;
+      
+   }
+	
+	public static Response findPetByStatus() throws Exception{
+		 
+		 // Send API request using RestAssured
+       Response findPetByStatusResponse = RestAssured.given()
+               .spec(CommonRequestSpec.getRequestSpec())
+               .queryParam("status", "available")
+               .basePath(ApiEndpoints.FIND_PET_BY_STATUS.getPath())
+               .when()
+               .get();
+           
+return findPetByStatusResponse;
 	}
+}
 
 

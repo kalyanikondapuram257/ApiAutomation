@@ -1,5 +1,7 @@
+utils\ExcelUtils.class
 utils\Helper.class
 requestPojo\addingPetRequestPojo$addingPetRequestPojoBuilder.class
+responseValiddationMethods\petServiceValidationMethods$1.class
 requestPojo\TagRequestPojo.class
 requestPojo\addingPetRequestPojo.class
 responsePojo\TagResponsePojo.class
@@ -7,12 +9,15 @@ responsePojo\addingPetResponsePojo.class
 utils\ConfigReader.class
 utils\AllureUtil.class
 utils\AllureTestListener.class
+utils\ExtentTestManager.class
 serviceUtils\ApiEndpoints.class
 serviceUtils\PetRequestSpecBuilder.class
+utils\ExcelUtils$1.class
 serviceUtils\CommonResponseSpec.class
 responsePojo\CategoryResponsePojo.class
 utils\BaseTest.class
 responsePojo\uploadPetImageResponsePojo.class
+utils\ExtentReportManager.class
 spec\petServiceSpecTest.class
 tests\test1.class
 utils\EnvironmentUtil.class
@@ -20,3 +25,4 @@ serviceUtils\CommonRequestSpec.class
 requestPojo\CategoryRequestPojo.class
 utils\RestAssuredLogger.class
 responseValiddationMethods\petServiceValidationMethods.class
+utils\ExtentTestNGListener.class

@@ -30,4 +30,19 @@ public void addingPet() throws Exception{
 
 }
 
+@Test
+public void addingPetByGettingExcel() throws Exception{
+	Response addingPetExcelResponse=PetRequestSpecBuilder.addingPetExcel();
+	System.out.println(addingPetExcelResponse.getBody().asString());
+	validationMethods.addingNewPetValidation(addingPetExcelResponse);
+}
+
+	
+@Test
+public void findByPetStatus() throws Exception{
+	Response findPetByStatusResponse=PetRequestSpecBuilder.findPetByStatus();
+	System.out.println(findPetByStatusResponse.getBody().asString());
+	validationMethods.findPetByStatusValidation(findPetByStatusResponse);
+
+}
 }

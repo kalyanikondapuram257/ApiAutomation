@@ -2,7 +2,7 @@
 <suite name="PetStoreSuite">
 <listeners>
 <listener class-name="io.qameta.allure.testng.AllureTestNg"/> <!-- Required for Allure results -->
-    <listener class-name="utils.AllureTestListener"/>
+    <listener class-name="utils.ExtentTestNGListener"/>
 </listeners>
 
     <test name="PetServiceTests">

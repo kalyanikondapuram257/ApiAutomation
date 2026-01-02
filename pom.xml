@@ -52,6 +52,11 @@
     <artifactId>jackson-databind</artifactId>
     <version>2.20.1</version>
 </dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.5.1</version>
+</dependency>
 
 <dependency>
     <groupId>org.projectlombok</groupId>
@@ -72,6 +77,11 @@
     <artifactId>allure-rest-assured</artifactId>
     <version>2.27.0</version>
     <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
 </dependency>
 
 

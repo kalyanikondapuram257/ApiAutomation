@@ -31,8 +31,8 @@ public enum ApiEndpoints {
 
     UPLOAD_PET_IMAGE("/v2/pet/{petId}/uploadImage"),
     PET_BASE("/v2/pet"),
-    FIND_PET_BY_STATUS("/pet/findByStatus"),
-    PET_BY_ID("/pet/{petId}");
+    FIND_PET_BY_STATUS("/v2/pet/findByStatus"),
+    PET_BY_ID("/v2/pet/{petId}");
 	
 	private final String path;
 	
